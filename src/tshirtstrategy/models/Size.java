@@ -1,12 +1,29 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package tshirtstrategy.models;
 
+/**
+ *
+ * @author mac
+ */
+
+/*
+
+       .22 .23 .25 .30 .35 .45   .60  
+Size, {XS, S,   M, L,  XL, XXL, XXXL}
+
+
+*/
 
 public enum Size {
-    XS,S,M,L,XL,XXL,XXXL;
+    XS, S, M, L, XL, XXL, XXXL;
     
     public float getSizePrice(int ordinal) {
-        float result=0;
-        switch (ordinal) {
+        float result = 0;
+        switch(ordinal) {
             case 0:
                 result = 0.22f;
                 break;
@@ -29,6 +46,7 @@ public enum Size {
                 result = 0.60f;
                 break;
         }
+                
         return result;
     }
 }

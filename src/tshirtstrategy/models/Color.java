@@ -1,13 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package tshirtstrategy.models;
 
+/**
+ *
+ * @author mac
+ */
+
+/*       .5     .10      .15     .20   .25    .30     .35
+Color, {RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET}
+*/
 public enum Color {
     RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET;
-
+    
     public float getColorPrice(int ordinal) {
-        float result=0;
-        switch (ordinal) {
+        float result = 0;
+        switch(ordinal) {
             case 0:
-                result = 0.05f;
+                result = 0.5f;
                 break;
             case 1:
                 result = 0.10f;
@@ -28,7 +41,7 @@ public enum Color {
                 result = 0.35f;
                 break;
         }
+                
         return result;
     }
-
 }
